@@ -99,5 +99,5 @@ const Benefit: React.FC<{
   );
 };
 
-export { BenefitsProps, BenefitItem };
+export type { BenefitsProps, BenefitItem };
 export default Benefits;
