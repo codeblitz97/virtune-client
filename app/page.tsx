@@ -28,8 +28,7 @@ const Home = (): JSX.Element => {
         <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
         <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-          Answer your customers&rsquo; possible questions here; it will increase
-          the conversion rate as well as support or chat requests.
+          This is our some of the most frequently asked question.
         </SectionTitle>
         <Faq />
         <Footer />
