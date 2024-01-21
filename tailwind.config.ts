@@ -1,8 +1,8 @@
-import { defineConfig } from 'windicss/helpers';
+import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import { neutral as trueGray } from 'tailwindcss/colors';
 
-export default defineConfig({
+const config: Config = {
   mode: 'jit',
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -18,9 +18,11 @@ export default defineConfig({
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      stock: [defaultTheme.fontFamily.sans],
+      stock: defaultTheme.fontFamily.sans,
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
   presets: [require('keep-react/preset')],
-});
+};
+
+export default config;
