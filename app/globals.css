@@ -1,0 +1,15 @@
+@import 'keep-react/css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
